@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import { randomQuiz } from '../../data'
+import { quiz } from '../../data'
 
 const page = () => {
   const [activeQuestion, setActiveQuestion] = useState(0)
@@ -15,7 +15,7 @@ const page = () => {
     wrongAnswers: 0
   })
 
-  const { questions } = randomQuiz;
+  const { questions } = quiz;
   const { question, answers, correctAnswer } = questions[activeQuestion];
 
   //select and check answer
